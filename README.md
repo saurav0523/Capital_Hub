@@ -4,13 +4,13 @@ A Flutter application that showcases a product catalog with search functionality
 
 ## Features
 
-- *Product Listing Screen*
+- Product Listing Screen
   - Grid view of products with essential details
   - Search functionality to filter products
   - Responsive design for various screen sizes
   - Product cards showing image, name, and price
 
-- *Product Detail Screen*
+- Product Detail Screen
   - Comprehensive product information display
   - Product images with zoom capability
   - Price and discount information
@@ -23,13 +23,13 @@ A Flutter application that showcases a product catalog with search functionality
 
 lib/
 ├── models/
-│   └── product_model.dart
+│   └── product.dart
 ├── screens/
-│   ├── product_listing_screen.dart
+│   ├── product_list_screen.dart
 │   └── product_detail_screen.dart
-├── widgets/
-│   ├── product_card.dart
-│   ├── search_bar.dart
+├── data/
+│   ├── products.dart
+│   ├── search_bar
 │   └── rating_widget.dart
 └── main.dart
 
@@ -83,38 +83,10 @@ The project follows a clean architecture pattern with:
 ## Widgets
 
 ### Custom Widgets
-- *ProductCard*: Reusable card widget for product display
-- *CustomSearchBar*: Search functionality implementation
-- *RatingDisplay*: Star rating visualization
-- *FeaturesList*: Product features display
-
-## Model Class
-
-dart
-class Product {
-  final String id;
-  final String name;
-  final double price;
-  final double discount;
-  final String imageUrl;
-  final double rating;
-  final List<String> features;
-  final String description;
-  final int reviews;
-
-  Product({
-    required this.id,
-    required this.name,
-    required this.price,
-    required this.discount,
-    required this.imageUrl,
-    required this.rating,
-    required this.features,
-    required this.description,
-    required this.reviews,
-  });
-}
-
+- ProductCard: Reusable card widget for product display
+- CustomSearchBar: Search functionality implementation
+- RatingDisplay: Star rating visualization
+- FeaturesList: Product features display
 
 ## Performance Optimization
 
@@ -123,28 +95,10 @@ class Product {
 - Widget reusability
 - Minimal rebuilds
 
-## Future Improvements
-
-- Add cart functionality
-- Implement user authentication
-- Add favorites feature
-- Implement filter options
-- Add sorting functionality
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (git checkout -b feature/AmazingFeature)
-3. Commit your changes (git commit -m 'Add some AmazingFeature')
-4. Push to the branch (git push origin feature/AmazingFeature)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Contact
 
 Your Name - Saurav Gupta
 
-Project Link: 
+Project Link: https://github.com/saurav0523/Capital_Hub
+E-mail - gsaurav641@gmail.com
